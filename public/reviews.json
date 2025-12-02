@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Frontend Developer",
+    "feedback": "This platform helped me improve my skills drastically! Highly recommended.",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Aisha Rahman",
+    "role": "UI/UX Designer",
+    "feedback": "Amazing courses and interactive workshops. I learned so much in a short time!",
+    "avatar": "https://i.pravatar.cc/150?img=2",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Michael Lee",
+    "role": "Photographer",
+    "feedback": "The instructors are professional and the content is very practical.",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "rating": 5
+  }
+]

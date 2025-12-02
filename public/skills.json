@@ -1,0 +1,87 @@
+[
+  
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Basic Cooking Class",
+    "providerName": "Rafi Ahmed",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Learn basic cooking — simple meals and kitchen basics.",
+    "image": "https://images.pexels.com/photos/318419/pexels-photo-318419.jpeg",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Beginner Photography Workshop",
+    "providerName": "Maya Rahman",
+    "providerEmail": "maya@skillswap.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Introductory course on photography — camera basics, lighting & composition.",
+    "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+    "category": "Photography"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Basic Drawing & Sketching",
+    "providerName": "Anik Saha",
+    "providerEmail": "anik@skillswap.com",
+    "price": 12,
+    "rating": 4.5,
+    "slotsAvailable": 6,
+    "description": "Learn drawing fundamentals: lines, shading, still life sketching.",
+    "image": "https://images.pexels.com/photos/3827030/pexels-photo-3827030.jpeg",
+    "category": "Art"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Nila Akter",
+    "providerEmail": "nila@skillswap.com",
+    "price": 18,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Gentle yoga sessions to build flexibility and mindfulness.",
+    "image": "https://images.pexels.com/photos/1812964/pexels-photo-1812964.jpeg",
+    "category": "Fitness"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Basic Graphic Design with Photoshop",
+    "providerName": "Rashed Khan",
+    "providerEmail": "rashed@skillswap.com",
+    "price": 22,
+    "rating": 4.6,
+    "slotsAvailable": 2,
+    "description": "Learn to design posters, flyers and social‑media graphics using Photoshop.",
+    "image": "https://images.pexels.com/photos/3778615/pexels-photo-3778615.jpeg",
+    "category": "Design"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Beginner Piano Lessons",
+    "providerName": "Farhana Begum",
+    "providerEmail": "farhana@skillswap.com",
+    "price": 20,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Basic piano classes for new learners — notes, chords, simple songs.",
+    "image": "https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg",
+    "category": "Music"
+  }
+]

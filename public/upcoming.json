@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Advanced UI/UX Design Workshop",
+    "providerName": "Emily Carter",
+    "providerEmail": "emily@skillswap.com",
+    "price": 25,
+    "rating": 4.9,
+    "date": "2025-02-10",
+    "image": "https://i.postimg.cc/6Q0dJvQ4/uiux-workshop.jpg",
+    "category": "Design",
+    "description": "Learn modern UI/UX design principles, prototyping, and user flow creation using Figma."
+  },
+  {
+    "id": 2,
+    "title": "Beginner Digital Marketing Bootcamp",
+    "providerName": "Daniel Roberts",
+    "providerEmail": "daniel@skillswap.com",
+    "price": 18,
+    "rating": 4.7,
+    "date": "2025-02-15",
+    "image": "https://i.postimg.cc/YS1SpTtf/digital-marketing.jpg",
+    "category": "Marketing",
+    "description": "A complete introduction to SEO, Facebook ads, email marketing, and brand strategy."
+  },
+  {
+    "id": 3,
+    "title": "Creative Writing Masterclass",
+    "providerName": "Aisha Rahman",
+    "providerEmail": "aisha@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "date": "2025-02-20",
+    "image": "https://i.postimg.cc/nL5qXVz7/creative-writing.jpg",
+    "category": "Writing",
+    "description": "Improve storytelling, character building, and narrative flow with hands-on exercises."
+  },
+  {
+    "id": 4,
+    "title": "Photography & Editing Basics",
+    "providerName": "Michael Lee",
+    "providerEmail": "michael@skillswap.com",
+    "price": 15,
+    "rating": 4.6,
+    "date": "2025-03-01",
+    "image": "https://i.postimg.cc/4dmHLB0X/photography.jpg",
+    "category": "Photography",
+    "description": "Learn how to shoot stunning photos and edit them using Lightroom & Snapseed."
+  },
+  {
+    "id": 5,
+    "title": "Introduction to Freelancing",
+    "providerName": "Sophia Kim",
+    "providerEmail": "sophia@skillswap.com",
+    "price": 12,
+    "rating": 4.5,
+    "date": "2025-03-05",
+    "image": "https://i.postimg.cc/4NLG1TtF/freelancing.jpg",
+    "category": "Career",
+    "description": "Master freelancing basics: profile setup, client handling, portfolio building."
+  }
+]

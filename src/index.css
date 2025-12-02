@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+a.active {
+  color: #1DAAA3;               /* active color */
+     border-bottom: #1DAAA3;
+  transition: all 0.3s ease; 
+  font-size: 22px;
+  text-decoration: underline;
+     
+}
+.text-pastecolor {
+  color: #127f7a;
+}
+.bgpastecolor {
+  background-color: #1DAAA3;
+}
+
+.btnStyle {
+  width: 100%;
+  background-color: #1DAAA3; /* pastecolor */
+  color: white;
+  font-weight: 600;
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btnStyle:hover{
+   background-color: #127f7a;
+}
+
+
+
+
+/* Optional: animate hover too */
+a:hover {
+  color: #1DAAA3;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
