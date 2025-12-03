@@ -15,6 +15,9 @@ import PrivateRoute from "./Privaterouter";
 import SingleSkill from "../pages/SingleSkill";
 import MyProfile from "../pages/Myprofile";
 import UpdateProfile from "../pages/UpdateProfile";
+import MySkills from "../pages/MySkills";
+import MyReq from "../pages/MyReq";
+import TutorProfile from "../pages/TutorProfile";
 
 const router=createBrowserRouter([
   {
@@ -64,12 +67,27 @@ const router=createBrowserRouter([
         path:'/update-profile',
         element:<PrivateRoute> <UpdateProfile/> </PrivateRoute>,
         
+      }, 
+      {
+        path:'/my-skills',
+        element:<PrivateRoute> <MySkills/>  </PrivateRoute> 
+        
+      },
+      {
+        path:'/tutor-profile',
+        element:<TutorProfile></TutorProfile> 
+        
       },
       
       {
         path:'/reviews',
         element:<Reviews/>,
         loader:()=> fetch('/reviews.json').then(res=>res.json(),)
+      },
+      {
+        path:'/my-requests',
+        element:<PrivateRoute> <MyReq/> </PrivateRoute>,
+        
       },
       {
         path:'/blog',

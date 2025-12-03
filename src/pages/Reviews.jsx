@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router';
+import { AuthContext } from '../context/AuthContext'; // adjust path
 
 const Reviews = () => {
+  const { user } = useContext(AuthContext); // get logged-in user
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -49,50 +52,8 @@ const Reviews = () => {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-pastecolor mb-8 text-center">Reviews</h2>
 
-        {/* Add Review Form */}
-        <form onSubmit={handleSubmit} className="mb-8 p-6 bg-white rounded-xl shadow-md">
-          <h3 className="text-xl font-semibold mb-4">Add Your Review</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              required
-              className="border p-2 rounded w-full"
-            />
-            <input
-              type="text"
-              placeholder="Your Role"
-              value={role}
-              onChange={e => setRole(e.target.value)}
-              required
-              className="border p-2 rounded w-full"
-            />
-            <textarea
-              placeholder="Your Feedback"
-              value={feedback}
-              onChange={e => setFeedback(e.target.value)}
-              required
-              className="border p-2 rounded w-full col-span-1 md:col-span-2"
-            />
-            <select
-              value={rating}
-              onChange={e => setRating(e.target.value)}
-              className="border p-2 rounded w-full"
-            >
-              {[5, 4, 3, 2, 1].map((r) => (
-                <option key={r} value={r}>{r} Star{r > 1 ? 's' : ''}</option>
-              ))}
-            </select>
-          </div>
-          <button
-            type="submit"
-            className="mt-4 bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition"
-          >
-            Submit Review
-          </button>
-        </form>
+     
+
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -118,6 +79,97 @@ const Reviews = () => {
             </div>
           ))}
         </div>
+
+           {/* Conditional Review Form */}
+
+                   {user ? (
+
+         <form
+  onSubmit={handleSubmit}
+  className="mb-10  mt-6 p-8 bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-gray-100"
+>
+  <h3 className="text-2xl font-bold text-pastecolor mb-6 text-center">
+    Share Your Experience
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    {/* Name */}
+    <div>
+      <label className="block text-sm font-medium text-gray-600 mb-1">Name</label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={e => setName(e.target.value)}
+        required
+        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pastecolor focus:outline-none transition"
+      />
+    </div>
+
+    {/* Role */}
+    <div>
+      <label className="block text-sm font-medium text-gray-600 mb-1">Role</label>
+      <input
+        type="text"
+        placeholder="Developer / Student / Designer"
+        value={role}
+        onChange={e => setRole(e.target.value)}
+        required
+        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pastecolor focus:outline-none transition"
+      />
+    </div>
+
+    {/* Feedback */}
+    <div className="md:col-span-2">
+      <label className="block text-sm font-medium text-gray-600 mb-1">
+        Your Feedback
+      </label>
+      <textarea
+        placeholder="Share your honest review..."
+        value={feedback}
+        onChange={e => setFeedback(e.target.value)}
+        required
+        rows={4}
+        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pastecolor focus:outline-none transition"
+      />
+    </div>
+
+    {/* Rating */}
+    <div>
+      <label className="block text-sm font-medium text-gray-600 mb-1">
+        Rating
+      </label>
+      <select
+        value={rating}
+        onChange={e => setRating(e.target.value)}
+        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pastecolor focus:outline-none transition"
+      >
+        {[5, 4, 3, 2, 1].map((r) => (
+          <option key={r} value={r}>{r} Star{r > 1 ? 's' : ''}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+
+  {/* Submit button */}
+  <button
+    type="submit"
+    className="mt-4 btnStyle"
+  >
+    Submit Review
+  </button>
+</form>
+        ) : (
+          <div className="mb-8 text-center">
+            <p className="mt-10 py-8 bg-[#127f7a] text-gray-50 text-2xl">Want to add a review? Please log in first.</p>
+            <Link to="/login">
+              <button className="btnStyle">
+                Go to Login
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

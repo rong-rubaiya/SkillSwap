@@ -1,4 +1,5 @@
 import React from 'react';
+import Swal from "sweetalert2";
 
 const blogPosts = [
   {
@@ -68,19 +69,31 @@ const blogPosts = [
 ];
 
 const Blogs = () => {
+
+  const handlePremiumAlert = () => {
+    Swal.fire({
+      title: "Premium Feature",
+      text: "You must be a premium member to access this content!",
+      icon: "info",
+      confirmButtonText: "OK",
+      confirmButtonColor: "#1DAAA3",
+    });
+  };
+
   return (
     <section className=" py-26 w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
+
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <h1 className="text-4xl font-bold text-pastecolor">THE CANVAS</h1>
-          <nav className="flex flex-wrap  space-x-4 text-gray-600 mt-4 md:mt-0">
-            <a href="#" className="hover:text-teal-500">Latest</a>
-            <a href="#" className="hover:text-teal-500">Trending</a>
-            <a href="#" className="hover:text-teal-500">Art</a>
-            <a href="#" className="hover:text-teal-500">Design</a>
-            <a href="#" className="hover:text-teal-500">Music</a>
-            <a href="#" className="hover:text-teal-500">Podcast</a>
+          <nav className="flex flex-wrap space-x-4 text-gray-600 mt-4 md:mt-0">
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Latest</a>
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Trending</a>
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Art</a>
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Design</a>
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Music</a>
+            <a onClick={handlePremiumAlert} className="hover:text-teal-500 cursor-pointer">Podcast</a>
           </nav>
         </div>
 
@@ -91,7 +104,7 @@ const Blogs = () => {
             <span className="text-sm text-teal-500 font-semibold">{blogPosts[0].category}</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">{blogPosts[0].title}</h2>
             <p className="text-gray-600 mt-2">{blogPosts[0].excerpt}</p>
-            <a href={blogPosts[0].link} className="mt-4 inline-block text-teal-500 font-semibold hover:underline">Read More →</a>
+            <a onClick={handlePremiumAlert} className="mt-4 inline-block text-teal-500 font-semibold hover:underline cursor-pointer">Read More →</a>
           </div>
         </div>
 
@@ -104,11 +117,14 @@ const Blogs = () => {
                 <span className="text-sm text-teal-500 font-semibold">{post.category}</span>
                 <h3 className="text-lg font-bold text-gray-900 mt-1">{post.title}</h3>
                 <p className="text-gray-600 text-sm mt-1 line-clamp-3">{post.excerpt}</p>
-                <a href={post.link} className="mt-2 inline-block text-teal-500 font-semibold hover:underline">Read More →</a>
+                <a onClick={handlePremiumAlert} className="mt-2 inline-block text-teal-500 font-semibold hover:underline cursor-pointer">
+                  Read More →
+                </a>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

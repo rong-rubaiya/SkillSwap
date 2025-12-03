@@ -16,6 +16,7 @@ function Nav() {
     { path: "/add-skill", label: "Add Skills" },
     { path: "/my-skills", label: "My Skills" },
     { path: "/my-requests", label: "My Requests" },
+    { path: "/tutor-profile", label: "Tutor Profile" },
     { path: "/reviews", label: "Reviews" },
     { path: "/blog", label: "Blog" },
     { path: "/about", label: "About" },

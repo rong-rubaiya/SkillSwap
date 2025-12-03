@@ -32,7 +32,7 @@ const SingleSkill = () => {
     // Show success toast
     Swal.fire({
       icon: "success",
-      title: "Session booked successfully!",
+      title: "Request for session booked successfully",
       showConfirmButton: false,
       timer: 2000,
     });
@@ -93,7 +93,7 @@ const SingleSkill = () => {
             className="p-3 border border-gray-300 rounded outline-none focus:ring-2 focus:ring-bgpastecolor"
           />
           <button type="submit" className="btnStyle">
-            Book Session
+            Request Session
           </button>
         </form>
       </div>
