@@ -12,7 +12,7 @@ const Achievements = () => {
   return (
     <section className="py-16 ">
       <div className="w-11/12 mx-auto text-center">
-        <h2 className="text-5xl font-bold text-pastecolor mb-16">Our Achievements</h2>
+        <h2 className="text-3xl sm:text-5xl font-bold text-pastecolor mb-16">Our Achievements</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-lg transition">

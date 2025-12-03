@@ -60,7 +60,11 @@ const PopularSkilled = () => {
 
     {/* Button */}
     <div className="mt-auto">
-      <button className="btnStyle">View Details</button>
+      <Link to={`/skill-details/${skill.skillId}`}>
+                      <button className="btnStyle">
+                        View Details
+                      </button>
+                      </Link>
     </div>
   </div>
 </motion.div>

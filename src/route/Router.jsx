@@ -10,6 +10,11 @@ import Blogs from "../pages/Blogs";
 import About from "../pages/About";
 import Contacts from "../pages/Contacts";
 import FAQ from "../pages/FAQ";
+import Addskills from "../pages/Addskills";
+import PrivateRoute from "./Privaterouter";
+import SingleSkill from "../pages/SingleSkill";
+import MyProfile from "../pages/Myprofile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router=createBrowserRouter([
   {
@@ -37,6 +42,28 @@ const router=createBrowserRouter([
         path:'/skills',
         element:<Skills></Skills>,
         loader:()=> fetch('/skills.json').then(res=>res.json(),)
+      },
+      {
+        path:'/skill-details/:id',
+        element:<PrivateRoute>
+          <SingleSkill/>
+        </PrivateRoute>,
+        loader:()=> fetch('/skills.json').then(res=>res.json(),)
+      },
+      {
+        path:'/add-skill',
+        element:<PrivateRoute><Addskills/> </PrivateRoute>,
+        
+      },
+      {
+        path:'/my-profile',
+        element:<PrivateRoute> <MyProfile/> </PrivateRoute>,
+        
+      },
+      {
+        path:'/update-profile',
+        element:<PrivateRoute> <UpdateProfile/> </PrivateRoute>,
+        
       },
       
       {

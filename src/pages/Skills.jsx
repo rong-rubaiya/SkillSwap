@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import { motion } from "framer-motion";
 
 function Skills() {
@@ -57,9 +57,11 @@ function Skills() {
 
               {/* Button at bottom */}
               <div className="mt-auto">
+                <Link to={`/skill-details/${skill.skillId}`}>
                 <button className="btnStyle">
                   View Details
                 </button>
+                </Link>
               </div>
             </div>
           </motion.div>

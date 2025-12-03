@@ -1,11 +1,47 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import Socialbtn from "../../component/Socialbtn";
+import { AuthContext } from "../../context/AuthContext";
+import Swal from "sweetalert2";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
+
+  const {signInUser}=use(AuthContext)
+
+  const navigate = useNavigate();
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('click')
+       
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+
+     signInUser(email, password)
+      .then((result) => {
+        // console.log(result.user);
+        Swal.fire({
+                  title: "User login successfully!",
+                  icon: "success",
+                });
+        e.target.reset();
+        navigate("/");
+      })
+      .catch((error) => {
+        // console.log(error);
+        Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.message,
+      });
+      });
+    
+  };
 
   return (
     <div className="min-h-screen py-28 flex items-center justify-center bg-gray-100">
@@ -26,7 +62,7 @@ function Login() {
         </motion.h2>
 
         {/* Form */}
-        <motion.form
+        <motion.form onSubmit={handleSubmit}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
@@ -36,6 +72,7 @@ function Login() {
           <div className="flex flex-col">
             <label className="mb-2 text-gray-700 font-medium">Email</label>
             <input
+            name="email"
               type="email"
               placeholder="Enter your email"
               className="border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pastecolor transition"
@@ -46,6 +83,7 @@ function Login() {
           <div className="flex flex-col relative">
             <label className="mb-2 text-gray-700 font-medium">Password</label>
             <input
+            name="password"
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
               className="border border-gray-300 rounded-xl p-3 pr-12 focus:outline-none focus:ring-2 focus:ring-pastecolor transition"
