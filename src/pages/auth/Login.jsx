@@ -1,15 +1,15 @@
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import Socialbtn from "../../component/Socialbtn";
 import { AuthContext } from "../../context/AuthContext";
 import Swal from "sweetalert2";
 
 function Login() {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword, ] = useState(false);
 
-  const {signInUser}=use(AuthContext)
+  const {signInUser, resetPassword }=use(AuthContext)
 
   const navigate = useNavigate();
 
@@ -41,6 +41,25 @@ function Login() {
       });
       });
     
+  };
+
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
+  const handleForgotPassword = () => {
+    const email = document.querySelector("input[name='email']").value;
+
+    if (!email) {
+      return Swal.fire("Enter your email first to reset password!");
+    }
+
+    resetPassword(email)
+      .then(() => Swal.fire("Password reset email sent!"))
+      .catch((err) => Swal.fire("Error", err.message, "error"));
   };
 
   return (
@@ -109,9 +128,9 @@ function Login() {
           {/* Forgot Password */}
           <p className="text-sm text-gray-500 text-center mt-3">
             Forgot your password?{" "}
-            <Link to={''} className="text-pastecolor font-semibold hover:underline">
+            <span onClick={handleForgotPassword} className="text-pastecolor font-semibold cursor-pointer hover:underline">
               Reset
-            </Link>
+            </span>
           </p>
           {/* register */}
           <p className="text-sm text-gray-500 text-center mt-3">

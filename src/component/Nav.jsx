@@ -31,7 +31,7 @@ function Nav() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="w-full md:w-11/12 mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-full lg:w-11/12 mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
         <NavLink to="/">
@@ -40,7 +40,7 @@ function Nav() {
 
         {/* Desktop Links */}
         <motion.div
-          className="hidden md:flex gap-6 items-center font-semibold text-gray-300"
+          className="hidden lg:flex  gap-6 items-center font-semibold text-gray-300"
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -142,7 +142,7 @@ function Nav() {
 }
 
           {/* Mobile Menu */}
-          <div className="md:hidden dropdown">
+          <div className="lg:hidden dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

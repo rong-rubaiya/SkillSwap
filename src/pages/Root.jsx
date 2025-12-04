@@ -5,6 +5,7 @@ import { Outlet } from 'react-router';
 import Footer from '../component/Footer';
 
 function Root() {
+  
   return (
      <div>
       <header>

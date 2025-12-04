@@ -18,6 +18,7 @@ import UpdateProfile from "../pages/UpdateProfile";
 import MySkills from "../pages/MySkills";
 import MyReq from "../pages/MyReq";
 import TutorProfile from "../pages/TutorProfile";
+import AllTeacher from "../pages/AllTeacher";
 
 const router=createBrowserRouter([
   {
@@ -44,14 +45,14 @@ const router=createBrowserRouter([
       {
         path:'/skills',
         element:<Skills></Skills>,
-        loader:()=> fetch('/skills.json').then(res=>res.json(),)
+        loader:()=> fetch('/skills.json').then(res=>res.json())
       },
       {
         path:'/skill-details/:id',
         element:<PrivateRoute>
           <SingleSkill/>
         </PrivateRoute>,
-        loader:()=> fetch('/skills.json').then(res=>res.json(),)
+        loader:()=> fetch('/skills.json').then(res=>res.json())
       },
       {
         path:'/add-skill',
@@ -75,7 +76,14 @@ const router=createBrowserRouter([
       },
       {
         path:'/tutor-profile',
-        element:<TutorProfile></TutorProfile> 
+        element:<AllTeacher/> ,
+        loader:()=>fetch('/teacher.json').then((res=>res.json()))
+        
+      },
+      {
+        path:'/tutor-details/:id',
+        element:<PrivateRoute><TutorProfile/></PrivateRoute> ,
+        loader:()=>fetch('/teacher.json').then((res=>res.json()))
         
       },
       

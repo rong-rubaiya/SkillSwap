@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "name": "Ayaan Khan",
+    "title": "Guitar Instructor & Music Producer",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "cover": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    "rating": 4.8,
+    "reviewsCount": 124,
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "about": "Experienced guitar instructor with 6+ years teaching beginners and intermediates. I focus on practical songs, music theory basics, and performance confidence. Online & in-person sessions available.",
+    "skills": [
+      { "name": "Acoustic Guitar", "level": "Expert" },
+      { "name": "Music Theory", "level": "Advanced" },
+      { "name": "Songwriting", "level": "Intermediate" }
+    ],
+    "hourlyRate": 12,
+    "availability": ["Mon", "Wed", "Fri"],
+    "portfolio": [
+      "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg",
+      "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg",
+      "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg"
+    ],
+    "topReviews": [
+      { "id": 1, "name": "Sara", "avatar": "https://i.pravatar.cc/150?img=32", "rating": 5, "text": "Ayaan is patient and explains things clearly. I improved so fast!" },
+      { "id": 2, "name": "Tom", "avatar": "https://i.pravatar.cc/150?img=45", "rating": 5, "text": "Great lessons — practical and fun. Highly recommended." }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Sara Ahmed",
+    "title": "Piano & Music Theory Teacher",
+    "avatar": "https://i.pravatar.cc/150?img=22",
+    "cover": "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg",
+    "rating": 4.7,
+    "reviewsCount": 98,
+    "location": "Chittagong, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "about": "Passionate piano teacher helping students learn music theory and classical piano techniques. Offers both online and offline sessions.",
+    "skills": [
+      { "name": "Piano", "level": "Expert" },
+      { "name": "Music Theory", "level": "Advanced" },
+      { "name": "Composition", "level": "Intermediate" }
+    ],
+    "hourlyRate": 15,
+    "availability": ["Tue", "Thu", "Sat"],
+    "portfolio": [
+      "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg",
+      "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg"
+    ],
+    "topReviews": [
+      { "id": 1, "name": "Amin", "avatar": "https://i.pravatar.cc/150?img=52", "rating": 5, "text": "Sara makes piano fun and easy to learn!" },
+      { "id": 2, "name": "Nabila", "avatar": "https://i.pravatar.cc/150?img=53", "rating": 4, "text": "Helpful and patient teacher." }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Riaz Hossain",
+    "title": "Drums & Percussion Instructor",
+    "avatar": "https://i.pravatar.cc/150?img=33",
+    "cover": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    "rating": 4.9,
+    "reviewsCount": 150,
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "about": "Professional drummer with 8+ years of teaching experience. Focused on building rhythm, coordination, and live performance skills.",
+    "skills": [
+      { "name": "Drums", "level": "Expert" },
+      { "name": "Percussion", "level": "Advanced" },
+      { "name": "Music Production", "level": "Intermediate" }
+    ],
+    "hourlyRate": 18,
+    "availability": ["Mon", "Wed", "Fri", "Sat"],
+    "portfolio": [
+      "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg",
+      "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg"
+    ],
+    "topReviews": [
+      { "id": 1, "name": "Farhan", "avatar": "https://i.pravatar.cc/150?img=61", "rating": 5, "text": "Riaz is amazing! Learned drums quickly." },
+      { "id": 2, "name": "Lina", "avatar": "https://i.pravatar.cc/150?img=62", "rating": 5, "text": "Very patient and professional." }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nadia Rahman",
+    "title": "Vocal Coach & Songwriting Mentor",
+    "avatar": "https://i.pravatar.cc/150?img=44",
+    "cover": "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg",
+    "rating": 4.6,
+    "reviewsCount": 85,
+    "location": "Khulna, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "about": "Vocal coach helping singers improve pitch, tone, and stage presence. Provides songwriting guidance and vocal exercises for all levels.",
+    "skills": [
+      { "name": "Vocals", "level": "Expert" },
+      { "name": "Songwriting", "level": "Advanced" },
+      { "name": "Performance Coaching", "level": "Intermediate" }
+    ],
+    "hourlyRate": 20,
+    "availability": ["Tue", "Thu", "Sun"],
+    "portfolio": [
+      "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg",
+      "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg"
+    ],
+    "topReviews": [
+      { "id": 1, "name": "Reza", "avatar": "https://i.pravatar.cc/150?img=71", "rating": 5, "text": "Nadia helped me sing with confidence!" },
+      { "id": 2, "name": "Maya", "avatar": "https://i.pravatar.cc/150?img=72", "rating": 4, "text": "Excellent vocal coach." }
+    ]
+  }
+]

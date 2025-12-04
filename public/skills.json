@@ -1,5 +1,4 @@
 [
-  
   {
     "skillId": 2,
     "skillName": "Spoken English Practice",
@@ -83,5 +82,161 @@
     "description": "Basic piano classes for new learners — notes, chords, simple songs.",
     "image": "https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg",
     "category": "Music"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Intermediate English Conversation",
+    "providerName": "Tazeen Islam",
+    "providerEmail": "tazeen@skillswap.com",
+    "price": 12,
+    "rating": 4.5,
+    "slotsAvailable": 5,
+    "description": "Focus on fluency and confidence in spoken English — group discussion format.",
+    "image": "https://images.pexels.com/photos/3184391/pexels-photo-3184391.jpeg",
+    "category": "Language"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Baking & Pastry Basics",
+    "providerName": "Shahriar Khan",
+    "providerEmail": "shahriar@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Learn to bake cakes, cookies & pastries from scratch.",
+    "image": "https://images.pexels.com/photos/3756760/pexels-photo-3756760.jpeg",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 11,
+    "skillName": "Smartphone Photography Essentials",
+    "providerName": "Rina Sultana",
+    "providerEmail": "rina@skillswap.com",
+    "price": 18,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Learn how to shoot better photos with your phone — composition, light, editing apps.",
+    "image": "https://images.pexels.com/photos/4145193/pexels-photo-4145193.jpeg",
+    "category": "Photography"
+  },
+  {
+    "skillId": 12,
+    "skillName": "Watercolor Painting for Beginners",
+    "providerName": "Joyita Rahim",
+    "providerEmail": "joyita@skillswap.com",
+    "price": 15,
+    "rating": 4.4,
+    "slotsAvailable": 5,
+    "description": "Basic watercolor techniques — washes, blending, and simple landscapes.",
+    "image": "https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg",
+    "category": "Art"
+  },
+  {
+    "skillId": 13,
+    "skillName": "Home Yoga & Meditation",
+    "providerName": "Salma Begum",
+    "providerEmail": "salma@skillswap.com",
+    "price": 16,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Relaxing yoga and meditation sessions suitable for home practice.",
+    "image": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+    "category": "Fitness"
+  },
+  {
+    "skillId": 14,
+    "skillName": "Logo & Branding Design",
+    "providerName": "Imran Hossain",
+    "providerEmail": "imran@skillswap.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 2,
+    "description": "Learn to create logos and branding material using design tools.",
+    "image": "https://images.pexels.com/photos/3205564/pexels-photo-3205564.jpeg",
+    "category": "Design"
+  },
+  {
+    "skillId": 15,
+    "skillName": "Guitar for Absolute Beginners",
+    "providerName": "Nawshad Ali",
+    "providerEmail": "nawshad@skillswap.com",
+    "price": 19,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Basic guitar lessons — chords, strumming and simple songs.",
+    "image": "https://images.pexels.com/photos/164853/pexels-photo-164853.jpeg",
+    "category": "Music"
+  },
+  {
+    "skillId": 16,
+    "skillName": "Intro to Web Development (HTML & CSS)",
+    "providerName": "Tanzim Karim",
+    "providerEmail": "tanzim@skillswap.com",
+    "price": 25,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Learn basics of building websites using HTML and CSS.",
+    "image": "https://images.pexels.com/photos/3184380/pexels-photo-3184380.jpeg",
+    "category": "Coding"
+  },
+  {
+    "skillId": 17,
+    "skillName": "Creative Writing Workshop",
+    "providerName": "Mousumi Chowdhury",
+    "providerEmail": "mousumi@skillswap.com",
+    "price": 15,
+    "rating": 4.5,
+    "slotsAvailable": 5,
+    "description": "Improve storytelling, poetry and essay writing skills.",
+    "image": "https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg",
+    "category": "Writing"
+  },
+  {
+    "skillId": 18,
+    "skillName": "Beginner Dance Class (Hip-Hop)",
+    "providerName": "Ayesha Siddique",
+    "providerEmail": "ayesha@skillswap.com",
+    "price": 20,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Learn basic hip‑hop moves and rhythm, ideal for total beginners.",
+    "image": "https://images.pexels.com/photos/645753/pexels-photo-645753.jpeg",
+    "category": "Dance"
+  },
+  {
+    "skillId": 19,
+    "skillName": "Calligraphy & Hand Lettering",
+    "providerName": "Sabrina Akter",
+    "providerEmail": "sabrina@skillswap.com",
+    "price": 17,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Learn modern calligraphy and hand‑lettering techniques on paper.",
+    "image": "https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg",
+    "category": "Art"
+  },
+  {
+    "skillId": 20,
+    "skillName": "Urban Gardening Basics",
+    "providerName": "Farid Uddin",
+    "providerEmail": "farid@skillswap.com",
+    "price": 14,
+    "rating": 4.4,
+    "slotsAvailable": 5,
+    "description": "Learn how to grow herbs and small plants in urban apartments.",
+    "image": "https://images.pexels.com/photos/1346951/pexels-photo-1346951.jpeg",
+    "category": "Gardening"
+  },
+  {
+    "skillId": 21,
+    "skillName": "Beginner Sewing & Stitching",
+    "providerName": "Laila Noor",
+    "providerEmail": "laila@skillswap.com",
+    "price": 18,
+    "rating": 4.5,
+    "slotsAvailable": 3,
+    "description": "Learn basic sewing — stitches, hemming, simple cloth repair.",
+    "image": "https://images.pexels.com/photos/3184307/pexels-photo-3184307.jpeg",
+    "category": "Craft"
   }
 ]

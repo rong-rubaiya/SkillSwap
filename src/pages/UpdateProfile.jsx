@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 export default function UpdateProfile() {
   const { user, updateUserProfile, updateExtraProfile } = useContext(AuthContext);
@@ -13,6 +13,12 @@ export default function UpdateProfile() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const navigate=useNavigate()
+
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

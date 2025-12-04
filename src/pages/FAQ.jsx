@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaQuestionCircle } from 'react-icons/fa';
+import { useLocation } from 'react-router';
 
 const faqs = [
   {
@@ -37,6 +38,12 @@ const FAQ = () => {
       setTimeout(() => setSubmitted(false), 3000);
     }
   };
+
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <section className="relative bg-gray-50 py-28 px-5 md:px-20 overflow-hidden">

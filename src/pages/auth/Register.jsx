@@ -1,10 +1,10 @@
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Socialbtn from "../../component/Socialbtn";
 import { AuthContext } from './../../context/AuthContext';
 import Swal from "sweetalert2";
 import { updateProfile } from 'firebase/auth';
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 function Register() {
@@ -12,6 +12,12 @@ function Register() {
   const [password, setPassword] = useState("");
   const {createUser,updateUserProfile}=use(AuthContext)
    const navigate = useNavigate();
+
+   const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
    
 
   const rules = [

@@ -7,7 +7,9 @@ import {
   signInWithEmailAndPassword, 
   signInWithPopup, 
   signOut, 
-  updateProfile as firebaseUpdateProfile 
+  updateProfile as firebaseUpdateProfile, 
+  FacebookAuthProvider,
+  sendPasswordResetEmail
 } from 'firebase/auth';
 import { auth } from '../firebase/firebase.config';
 
@@ -58,6 +60,22 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+  // fb
+
+  const fbProvider = new FacebookAuthProvider();
+
+  const facebookLogin = () => {
+  setLoading(true);
+  return signInWithPopup(auth, fbProvider);
+};
+
+// reset
+
+const resetPassword = (email) => {
+    setLoading(true);
+    return sendPasswordResetEmail(auth, email);
+  };
+
   const signOutUser = () => {
     setLoading(true);
     return signOut(auth);
@@ -84,6 +102,8 @@ const AuthProvider = ({ children }) => {
     signInUser,
     signInWithGoogle,
     signOutUser,
+    facebookLogin,
+     resetPassword,
    
      user: mergedUser,
     loading,

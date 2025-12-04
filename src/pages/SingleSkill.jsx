@@ -1,11 +1,16 @@
-import React, { useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import React, { useEffect, useState } from "react";
+import { useLoaderData, useLocation, useParams } from "react-router";
 import Swal from "sweetalert2";
 
 const SingleSkill = () => {
   const { id } = useParams();
   const data = useLoaderData();
 
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
  
   const skill = data.find((item) => item.skillId === Number(id));
 

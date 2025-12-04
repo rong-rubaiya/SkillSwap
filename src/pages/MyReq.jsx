@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillDelete } from "react-icons/ai";
 import Swal from "sweetalert2";
+import { useLocation } from "react-router";
 
 const initialRequests = [
   { id: 1, skill: "Piano Lessons", level: "Beginner", status: "Pending", color: "#FBBF24" },
@@ -11,6 +12,11 @@ const initialRequests = [
 
 const MyReq = () => {
   const [requests, setRequests] = useState(initialRequests);
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const handleDelete = (id) => {
     Swal.fire({

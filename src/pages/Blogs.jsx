@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import Swal from "sweetalert2";
 
 const blogPosts = [
@@ -69,6 +70,13 @@ const blogPosts = [
 ];
 
 const Blogs = () => {
+
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
 
   const handlePremiumAlert = () => {
     Swal.fire({

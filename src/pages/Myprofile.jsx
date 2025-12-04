@@ -8,6 +8,9 @@ export default function MyProfile() {
   if (!user) {
     return <p className="text-center mt-10">Loading...</p>;
   }
+  
+
+  
 
   return (
    <div className="w-11/12 mx-auto pb-10 pt-30">

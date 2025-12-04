@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router";
 
 const owners = [
   {
@@ -17,6 +17,12 @@ const owners = [
 ];
 
 const About = () => {
+
+  const pathname=useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <section className="py-28 w-11/12 mx-auto ">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">

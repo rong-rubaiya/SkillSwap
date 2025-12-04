@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { FaStar } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { AuthContext } from '../context/AuthContext'; // adjust path
 
 const Reviews = () => {
@@ -12,7 +12,11 @@ const Reviews = () => {
   const [role, setRole] = useState('');
   const [feedback, setFeedback] = useState('');
   const [rating, setRating] = useState(5);
+const pathname=useLocation()
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   useEffect(() => {
     fetch('/reviews.json')
       .then(res => res.json())

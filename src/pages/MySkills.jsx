@@ -44,6 +44,7 @@ const skills = [
   },
 ];
 
+
 const MySkills = () => {
   return (
     <div className="w-11/12 mx-auto py-28 px-6 bg-gray-50 min-h-screen">
