@@ -1,16 +1,33 @@
-# React + Vite
+# 🌟 Skill Swap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Skill Swap** is a platform where users can exchange skills with each other. Users can offer their expertise in certain areas and learn new skills from others in a collaborative and interactive way. This project aims to create a community-driven learning environment.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **User Registration & Authentication** – Sign up and log in securely.  
+- **Skill Listing** – Add, update, and browse skills offered by users.  
+- **Search & Filter** – Find users by skill, location, or category.  
+- **Chat & Collaboration** – Connect and communicate with other users to arrange skill swaps.  
+- **Ratings & Reviews** – Rate experiences to maintain trust and quality in the community.  
+- **Responsive Design** – Accessible on desktop and mobile devices.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Tailwind CSS, DaisyUI  
+- **Backend / Database:** Firebase (Authentication, Firestore, Hosting)  
+- **State Management:** React Context / Redux (if used)  
+- **Animations:** Framer Motion (if used)  
+- **Icons:** React Icons  
+
+---
+
+## 💻 Installation
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/yourusername/skill-swap.git
+   cd skill-swap
